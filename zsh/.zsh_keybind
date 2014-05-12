@@ -1,0 +1,2 @@
+# Enable emacs keybindings
+bindkey -e
