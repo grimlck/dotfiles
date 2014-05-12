@@ -7,6 +7,15 @@ test -e $HOME/.zsh_colors && source $HOME/.zsh_colors
 # Appearance
 test -e $HOME/.zsh_appearance && source $HOME/.zsh_appearance
 
+# Keybindings
+test -e $HOME/.zsh_keybind && source $HOME/.zsh_keybind
+
+# Completion
+test -e $HOME/.zsh_completion && source $HOME/.zsh_completion
+
+# Prompt
+test -e $HOME/.zsh_prompt && source $HOME/.zsh_prompt
+
 # Load and run compinit
 autoload -U compinit
 compinit -i
@@ -25,7 +34,7 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history # share command history data
 
-# Prompt
-autoload -U promptinit
-promptinit
-PROMPT="[%n@%m %B %~ %b] %# %{$reset_color%}"
+# Directories
+setopt auto_name_dirs
+setopt auto_pushd   # cd +<TAB> to see cd history
+setopt pushd_ignore_dups
