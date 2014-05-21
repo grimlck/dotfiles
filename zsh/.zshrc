@@ -38,3 +38,6 @@ setopt share_history # share command history data
 setopt auto_name_dirs
 setopt auto_pushd   # cd +<TAB> to see cd history
 setopt pushd_ignore_dups
+
+# Path
+export PATH=~/bin:$PATH
