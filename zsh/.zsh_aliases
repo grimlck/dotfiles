@@ -1,2 +1,10 @@
 alias ll='ls -lah'
 alias l='ls -l'
+
+# Docker related
+alias doim="docker images"
+alias dops="docker ps"
+alias dopsa="docker ps -a"
+alias dopsaq="docker ps -a -q"
+alias dorm="docker rm"
+alias dormi="docker rmi"
