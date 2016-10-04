@@ -26,13 +26,6 @@ let mapleader = ","
 let python_highlight_all=1
 syntax on
 
-" 80 character line coloring
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
-
 " RUn Python code from Vim
 " map <f5> :w <CR>!clear <CR>:!python % <CR>
 
