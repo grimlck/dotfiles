@@ -49,3 +49,7 @@ export PATH=~/bin:$PATH
 
 # Load AWS CLI auto complete if exists
 test -f "/usr/local/share/zsh/site-functions/_aws" && source "/usr/local/share/zsh/site-functions/_aws"
+
+# locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
