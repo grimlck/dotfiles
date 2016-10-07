@@ -39,11 +39,6 @@ setopt auto_name_dirs
 setopt auto_pushd   # cd +<TAB> to see cd history
 setopt pushd_ignore_dups
 
-# ENV_VARIABLES
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # Path
 export PATH=~/bin:$PATH
 
