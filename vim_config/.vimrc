@@ -1,3 +1,4 @@
+set nocompatible
 set nobackup
 set nowritebackup
 set noswapfile
@@ -7,7 +8,7 @@ set expandtab
 set softtabstop=4
 set autoindent
 set smarttab
-filetype indent on
+filetype plugin indent on
 filetype on
 filetype plugin on
 
@@ -39,3 +40,7 @@ function! ToggleRelativeAbsoluteNumber()
   endif
 endfunction
 
+" indent by file type
+if has('autocmd')
+  autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+endif
