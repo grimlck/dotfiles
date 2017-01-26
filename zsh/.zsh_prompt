@@ -16,10 +16,11 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr "%{$fg[red]%}*%{$reset_color%}"   # display this when there are unstaged changes
 zstyle ':vcs_info:*' stagedstr "%{$fg[yellow]%}+%{$reset_color%}"  # display this when there are staged changes
 zstyle ':vcs_info:*' actionformats "[%b%|%a%c%u%]%f"
-zstyle ':vcs_info:*' formats ":%F{245}%b%{$reset_color%}%c%u%f"
+zstyle ':vcs_info:*' formats " %F{yellow}at%f %F{245}%b%{$reset_color%}%c%u%f"
 
 
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 
 precmd () { vcs_info }
-PROMPT='[%n@%m %B%~%b${vcs_info_msg_0_}] %# %{$reset_color%}'
+PROMPT='%F{172}%D{%H:%M:%S}%f - %F{green}%n%f %F{yellow}at%f %F{red}%m%f %F{yellow}in%f %B%/%b${vcs_info_msg_0_}
+%# %{$reset_color%}'
