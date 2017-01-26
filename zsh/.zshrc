@@ -39,11 +39,21 @@ setopt auto_name_dirs
 setopt auto_pushd   # cd +<TAB> to see cd history
 setopt pushd_ignore_dups
 
-# Path
-export PATH=~/bin:$PATH
+## Path
+export PATH="~/bin:$PATH"
+
 
 # Load AWS CLI auto complete if exists
 test -f "/usr/local/share/zsh/site-functions/_aws" && source "/usr/local/share/zsh/site-functions/_aws"
+
+# Golang
+if [ -d "$HOME/go" ]
+then
+    export GOROOT="$HOME/go"
+    export PATH="$GOROOT/bin:$PATH"
+
+    export GOPATH="$HOME/software-projects/go"
+fi
 
 # locales
 export LC_ALL=en_US.UTF-8
