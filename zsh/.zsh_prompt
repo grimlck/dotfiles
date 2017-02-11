@@ -22,5 +22,5 @@ zstyle ':vcs_info:*' formats " %F{yellow}at%f %F{245}%b%{$reset_color%}%c%u%f"
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 
 precmd () { vcs_info }
-PROMPT='%F{172}%D{%H:%M:%S}%f - %F{green}%n%f %F{yellow}at%f %F{red}%m%f %F{yellow}in%f %B%/%b${vcs_info_msg_0_}
+PROMPT='%F{172}%D{%H:%M:%S}%f - %F{green}%n%f %F{yellow}at%f %F{red}%M%f %F{yellow}in%f %B%/%b${vcs_info_msg_0_}
 %# %{$reset_color%}'
