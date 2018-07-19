@@ -44,3 +44,6 @@ endfunction
 if has('autocmd')
   autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 endif
+
+" disable auto VISUAL
+set mouse-=a
