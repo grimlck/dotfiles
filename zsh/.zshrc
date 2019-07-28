@@ -40,7 +40,7 @@ setopt auto_pushd   # cd +<TAB> to see cd history
 setopt pushd_ignore_dups
 
 ## Path
-export PATH="~/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 
 # Load AWS CLI auto complete if exists
